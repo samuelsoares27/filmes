@@ -1,7 +1,3 @@
-.listaFilmes {
-  margin: 15;
-}
-
 .listaFilmes article {
   display: flex;
   flex-direction: column;
@@ -19,6 +15,9 @@
   padding-bottom: 15px;
 }
 
-.btnFilme {
-  width: 714px;
+.imgFilmes {
+  width: 100%;
+}
+.filme {
+  width: 100%;
 }

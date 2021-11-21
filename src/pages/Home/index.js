@@ -30,8 +30,8 @@ export default function Home() {
                   return (
                     <article key={filme.id}>
                       <h2 className="tituloFilmes">{filme.nome}</h2>
-                      <img src={filme.foto} alt={filme.nome} />
-                      <Link to={`/filme/${filme.id}`}><Button variant="danger" className="btnFilme">Acessar</Button></Link>
+                      <img className="filme" src={filme.foto} alt={filme.nome} />
+                      <Link  to={`/filme/${filme.id}`}><Button variant="danger" className="filme">Acessar</Button></Link>
                     </article>
                   )
                 })
