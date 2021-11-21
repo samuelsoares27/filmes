@@ -31,7 +31,7 @@ export default function Home() {
                     <article key={filme.id}>
                       <h2 className="tituloFilmes">{filme.nome}</h2>
                       <img src={filme.foto} alt={filme.nome} />
-                      <Link to="/filme"><Button variant="danger" className="btnFilme">Acessar</Button></Link>
+                      <Link to={`/filme/${filme.id}`}><Button variant="danger" className="btnFilme">Acessar</Button></Link>
                     </article>
                   )
                 })

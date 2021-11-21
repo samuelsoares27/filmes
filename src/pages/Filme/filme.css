@@ -1,0 +1,30 @@
+.filmeInfo {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  align-items: center;
+  margin: 15px;
+}
+
+.filmeInfo h1 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.filmeInfo p {
+  width: 711px;
+}
+
+.filmeInfo img {
+  border-radius: 20px;
+}
+
+.divFilme {
+  min-height: 100vh;
+}
+
+.filmeButtons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
