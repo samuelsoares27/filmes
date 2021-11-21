@@ -13,3 +13,7 @@ header {
   color: #fff;
   cursor: pointer;
 }
+
+.Logo:hover {
+  color: black;
+}
