@@ -1,0 +1,23 @@
+.listaFilmes {
+  margin: 15;
+}
+
+.listaFilmes article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.tituloFilmes {
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+.btnFilme {
+  width: 714px;
+}
