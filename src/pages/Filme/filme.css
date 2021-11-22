@@ -12,11 +12,12 @@
 }
 
 .filmeInfo p {
-  width: 711px;
+  width: 100%;
 }
 
 .filmeInfo img {
   border-radius: 20px;
+  width: 100%;
 }
 
 .divFilme {

@@ -1,7 +1,7 @@
 import './filme.css'
 import { useHistory, useParams } from 'react-router'
 import { useEffect, useState } from 'react';
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col, Button, Modal } from "react-bootstrap";
 import api from '../../Services/api';
 
 export default function Filme() {
@@ -9,6 +9,10 @@ export default function Filme() {
     const [filme, setFilme] = useState([]);
     const [loading, setLoading] = useState(true);
     const history = useHistory();
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const [textoModal, setTextoModal] = useState("");
+    const [textoTituloModal] = useState("Atenção");
 
      useEffect(() => {
         
@@ -35,7 +39,6 @@ export default function Filme() {
         )
     }
 
-
     return (
         <div className="divFilme">
             <Container>
@@ -50,7 +53,6 @@ export default function Filme() {
                     </Col>
                     <Col md="12" className="filmeButtons">
                         <div>
-                            <Button variant="outline-danger" onClick={() => { }}>Salvar</Button>
                             <Button variant="outline-danger" target="_blank" href={`https://www.youtube.com/results?search_query=${filme.nome} Trailer`}>
                                 Trailer
                             </Button>
@@ -58,6 +60,13 @@ export default function Filme() {
                     </Col>
                 </Row>
             </Container>
+
+            <Modal show={show} onHide={handleClose} animation={false}>
+                <Modal.Header closeButton>
+                    <Modal.Title>{ textoTituloModal }</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>{ textoModal }</Modal.Body>
+            </Modal>
         </div>
     )
 }
